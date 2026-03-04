@@ -2,6 +2,7 @@
 #define __common_h__
 
 #include <sys/time.h>
+
 #include <assert.h>
 
 double GetTime() {
