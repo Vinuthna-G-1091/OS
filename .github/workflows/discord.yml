@@ -17,7 +17,8 @@ jobs:
         run:  pip install requests
 
       - name: Notify Discord by running the script
-        run:  python scripts/notify.py
+        run: python scripts/notify.py
+
         env:
           # Setup Webhook
           WEBHOOK: ${{ secrets.DISCORD }}

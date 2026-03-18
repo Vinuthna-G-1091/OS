@@ -70,7 +70,7 @@ def get_discord_payload_v1(title, url, author, branch, number):
     return payload
 
 event = os.environ.get("EVENT_NAME")
-web_hook = os.environ["WEB_HOOK"] # Discord Webhook URL presented as an environment variable
+web_hook = os.environ["WEBHOOK"] # Discord Webhook URL presented as an environment variable
 
 if event == "pull_request_target":
     merged = (os.environ.get("PR_MERGED") == "true")
